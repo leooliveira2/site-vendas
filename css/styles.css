@@ -1,0 +1,224 @@
+body {
+    background-color: #1d2631;
+    height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho {
+    padding: 30px 0 30px 80px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 10% 1fr 20%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imagem_logo {
+    margin-right: 5px;
+}
+
+.titulo_logo {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.menu_navegacao {
+    justify-self: center;
+}
+
+.lista_menu-navegacao {
+    display: flex;
+}
+
+.item_lista-menu-navegacao {
+    margin: 0 1em;
+}
+
+.item_lista-menu-navegacao:hover {
+    color: rgb(189, 177, 177);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.area_do_usuario {
+    display: flex;
+    align-items: center;
+}
+
+.carrinho {
+    margin-right: 1em;
+}
+
+.botao_login {
+    background-color: rgb(189, 177, 177);
+    color: black;
+    padding: 0.8em 2em;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-width: 0;
+}
+
+.botao_login:hover {
+    cursor: pointer;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.principal {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.icones_fones {
+    margin-right: 4em;
+}
+
+.botao_trocar-fone {
+    border-width: 0;
+    border-radius: 120px;
+    display: block;
+    margin-bottom: 3em;
+}
+
+.botao_trocar-fone:hover {
+    background-color: rgb(209, 206, 206);
+}
+
+.fone_azul-icone {
+    background-color: rgba(0, 162, 255, 0.87);
+}
+
+.fone_branco-icone {
+    background-color: white;
+}
+
+.fone_laranja-icone {
+    background-color: rgb(255, 81, 0);
+}
+
+.detalhes_fones {
+    display: flex;
+}
+
+.imagem_grande-fone {
+    margin-right: 2em;
+}
+
+.descricao_fones {
+    margin: 1em;
+}
+
+.titulo_fone {
+    font-weight: bold;
+    font-size: 5em;
+    margin-bottom: 0.1em;
+}
+
+.slogan_fone {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 4em;
+}
+
+.preco_fone {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+
+.botao_adicionar-ao-carrinho {
+    background-color: rgb(189, 177, 177);
+    padding: 2em;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 15px;
+    border-width: 0;
+}
+
+.botao_adicionar-ao-carrinho:hover {
+    cursor: pointer;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+/* Responsividade*/
+
+@media screen and (max-width: 430px) {
+    .cabecalho {
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr 70%;
+        padding: 0;
+        row-gap: 1.2em;
+    }
+
+    .logo {
+        margin-right: 1.4em;
+    }
+
+    .menu_navegacao {
+        grid-row: 2;
+    }
+
+    .item_lista-menu-navegacao {
+        margin: 0 1em 0 0;
+    }
+
+    .area_do_usuario {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-top: 1em;
+        width: 20%;
+    }
+
+    .botao_login {
+        padding: 0.5em;
+        font-size: 1em;
+    }
+
+    .principal {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .icones_fones {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .detalhes_fones {
+        flex-direction: column;
+    }
+
+    .descricao_fones {
+        margin: 1em 0.2em;
+    }
+
+    .imagem_grande-fone {
+        width: 200px;
+        height: 200px;
+        align-self: center;
+    }
+
+    .titulo_fone {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .slogan_fone {
+        font-size: 1.2em;
+        width: 80%;
+    }
+
+    .botao_adicionar-ao-carrinho {
+        padding: 1em;
+    }
+}
+
+/* ainda faltam algumas coisas...... */
